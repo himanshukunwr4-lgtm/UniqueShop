@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - UniqueStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-card {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 180px;
+            height: 180px;
+            flex-shrink: 0;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .product-price {
+            font-size: 1.3rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+        }
+        
+        .product-info p {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .btn {
+            padding: 0.6rem 1.2rem;
+            margin-right: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .specifications-section {
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            background: #667eea;
+            color: white;
+            padding: 1rem;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        
+        .specifications-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        .specifications-table th,
+        .specifications-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specifications-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+            width: 25%;
+            color: #2c3e50;
+        }
+        
+        .specifications-table td {
+            color: #333;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Product Details</h1>
+            
+            <!-- Samsung Galaxy S24 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.01net.com/app/uploads/2024/01/Samsung-Galaxy-S24-Ultra-1.jpg" alt="Samsung Galaxy S24">
+                </div>
+                <div class="product-info">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p class="product-price">Rs. 89,999</p>
+                    <p>Experience the pinnacle of smartphone technology with cutting-edge AI capabilities and exceptional camera system.</p>
+                    <button class="btn" onclick="addToCart('Samsung Galaxy S24', '89,999')">Add to Cart</button>
+                    <button class="btn" onclick="toggleDetails('samsung-specs')">View Specs</button>
+                </div>
+            </div>
+
+            <!-- Samsung S24 Specifications -->
+            <section id="samsung-specs" class="specifications-section" style="display: none;">
+                <h2 class="section-title">Samsung Galaxy S24 Specifications</h2>
+                <table class="specifications-table">
+                    <tr><th>Display</th><td>6.2" Dynamic AMOLED 2X, 120Hz</td></tr>
+                    <tr><th>Processor</th><td>Snapdragon 8 Gen 3 (4nm)</td></tr>
+                    <tr><th>RAM</th><td>8GB LPDDR5X</td></tr>
+                    <tr><th>Storage</th><td>256GB UFS 4.0</td></tr>
+                    <tr><th>Camera</th><td>50MP + 12MP + 10MP</td></tr>
+                    <tr><th>Battery</th><td>4000mAh with 25W Fast Charging</td></tr>
+                </table>
+            </section>
+
+            <!-- MacBook Air M2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/220715121407-macbook-air-m2-review-1.jpg" alt="MacBook Air M2">
+                </div>
+                <div class="product-info">
+                    <h3>MacBook Air M2</h3>
+                    <p class="product-price">Rs. 149,999</p>
+                    <p>Ultra-thin laptop with M2 chip for exceptional performance. Perfect for professionals and students.</p>
+                    <button class="btn" onclick="addToCart('MacBook Air M2', '149,999')">Add to Cart</button>
+                    <button class="btn" onclick="toggleDetails('macbook-specs')">View Specs</button>
+                </div>
+            </div>
+
+            <!-- Sony WH-1000XM5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://headphonereview.com/wp-content/uploads/2019/02/sony-wh-1000xm3-2.jpg" alt="Sony WH-1000XM5">
+                </div>
+                <div class="product-info">
+                    <h3>Sony WH-1000XM5</h3>
+                    <p class="product-price">Rs. 34,999</p>
+                    <p>Premium noise-canceling headphones with superior sound quality and 30-hour battery life.</p>
+                    <button class="btn" onclick="addToCart('Sony WH-1000XM5', '34,999')">Add to Cart</button>
+                    <button class="btn" onclick="toggleDetails('sony-specs')">View Specs</button>
+                </div>
+            </div>
+            
+            <!-- MacBook Air M2 Specifications -->
+            <section id="macbook-specs" class="specifications-section" style="display: none;">
+                <h2 class="section-title">MacBook Air M2 Specifications</h2>
+                <table class="specifications-table">
+                    <tr><th>Display</th><td>13.6" Liquid Retina, 2560x1664</td></tr>
+                    <tr><th>Processor</th><td>Apple M2 chip with 8-core CPU</td></tr>
+                    <tr><th>RAM</th><td>8GB / 16GB / 24GB unified memory</td></tr>
+                    <tr><th>Storage</th><td>256GB / 512GB / 1TB / 2TB SSD</td></tr>
+                    <tr><th>Battery</th><td>Up to 18 hours wireless web</td></tr>
+                    <tr><th>Operating System</th><td>macOS Ventura</td></tr>
+                </table>
+            </section>
+            
+            <!-- Sony WH-1000XM5 Specifications -->
+            <section id="sony-specs" class="specifications-section" style="display: none;">
+                <h2 class="section-title">Sony WH-1000XM5 Specifications</h2>
+                <table class="specifications-table">
+                    <tr><th>Driver Unit</th><td>30mm dome type</td></tr>
+                    <tr><th>Frequency Response</th><td>4 Hz - 40,000 Hz</td></tr>
+                    <tr><th>Noise Canceling</th><td>Industry-leading Active Noise Canceling</td></tr>
+                    <tr><th>Battery Life</th><td>30 hours with ANC on</td></tr>
+                    <tr><th>Connectivity</th><td>Bluetooth 5.2, NFC, 3.5mm jack</td></tr>
+                    <tr><th>Weight</th><td>250g</td></tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

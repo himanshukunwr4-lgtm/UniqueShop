@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - UniqueStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .confirmation-content {
+            text-align: center;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 3rem 0;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        
+        .order-details {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .order-number {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="confirmation-content">
+                <div class="success-icon">✓</div>
+                <h1>Thank You for Your Order!</h1>
+                <p>Your order has been successfully placed and is being processed.</p>
+                
+                <div class="order-number">Order #US-2024-001234</div>
+                
+                <div class="order-details">
+                    <h2>Order Summary</h2>
+                    <p><strong>Order Date:</strong> August 29, 2024</p>
+                    <p><strong>Estimated Delivery:</strong> September 2-5, 2024</p>
+                    <p><strong>Total Amount:</strong> Rs. 384,694</p>
+                    <p><strong>Payment Method:</strong> Cash on Delivery</p>
+                    <p><strong>Delivery Address:</strong> Kathmandu Metropolitan City, Ward No. 11</p>
+                </div>
+                
+                <p>We have sent a confirmation email to your registered email address with all the order details. You can track your order status using the order number provided above.</p>
+                
+                <div style="margin: 2rem 0;">
+                    <a href="index.html" class="btn" style="margin-right: 1rem;">Continue Shopping</a>
+                    <a href="contact.html" class="btn" style="background: #667eea;">Contact Support</a>
+                </div>
+            </div>
+
+            <section class="next-steps">
+                <h2>What Happens Next?</h2>
+                <div class="ordered-list">
+                    <ol>
+                        <li>Order confirmation email will be sent within 5 minutes</li>
+                        <li>Your order will be processed within 24 hours</li>
+                        <li>Items will be carefully packed and prepared for shipping</li>
+                        <li>You will receive a tracking number via SMS and email</li>
+                        <li>Your order will be dispatched within 1-2 business days</li>
+                        <li>Delivery will be completed within 3-5 business days</li>
+                        <li>Enjoy your new products from UniqueStore!</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="customer-service">
+                <h2>Need Help?</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Track Your Order</h3>
+                            <p>Use your order number to track delivery status in real-time</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Customer Support</h3>
+                            <p>Call +977-1-4567890 for any questions about your order</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Return Policy</h3>
+                            <p>Easy returns within 7 days if you're not satisfied</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommended-products">
+                <h2>You Might Also Like</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Phone Case</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Phone Case</h3>
+                            <p class="product-price">Rs. 1,999</p>
+                            <button class="btn" onclick="addToCart('Premium Phone Case', '1,999')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Screen Protector</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tempered Glass Screen Protector</h3>
+                            <p class="product-price">Rs. 799</p>
+                            <button class="btn" onclick="addToCart('Screen Protector', '799')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span>Wireless Charger</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Fast Wireless Charger</h3>
+                            <p class="product-price">Rs. 3,499</p>
+                            <button class="btn" onclick="addToCart('Wireless Charger', '3,499')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

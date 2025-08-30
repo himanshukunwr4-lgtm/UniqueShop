@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UniqueStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="contact-intro">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Get in touch with us for any questions, concerns, or feedback about your shopping experience.</p>
+                
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form id="buyer-contact-form">
+                        <div class="form-group">
+                            <label for="buyer-name">Name *</label>
+                            <input type="text" id="buyer-name" name="buyer-name" required>
+                            <div id="buyer-name-error" class="error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="buyer-email">Email *</label>
+                            <input type="email" id="buyer-email" name="buyer-email" required>
+                            <div id="buyer-email-error" class="error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="buyer-phone">Phone Number *</label>
+                            <input type="tel" id="buyer-phone" name="buyer-phone" required>
+                            <div id="buyer-phone-error" class="error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="buyer-message">Message</label>
+                            <textarea id="buyer-message" name="buyer-message" rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="contact-info">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Customer Service</h3>
+                            <p>Phone: +977-9867678417</p>
+                            <p>Email: himanshukunwr42@gmail.com</p>
+                            <p>Hours: 24 hours for Customers</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Head Office</h3>
+                            <p>Kathmandu Metropolitan City</p>
+                            <p>Ward No. 11, Thapathali</p>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Business Inquiries</h3>
+                            <p>Phone: +977-9867678417</p>
+                            <p>Email: himanshukunwr42@gmail.com</p>
+                            <p>Partnership opportunities</p>
+                            <p>Wholesale & Bulk orders</p>
+                            <p>Vendor registration</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location-section">
+                <h2>Our Location</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>Visit Our Store</h3>
+                        <div class="address-details">
+                            <p><strong>📍 Address:</strong></p>
+                            <p>UniqueStore Head Office</p>
+                            <p>Ward No. 11, Thapathali</p>
+                            <p>Kathmandu Metropolitan City</p>
+                            <p>Kathmandu, Nepal</p>
+                            <p>Postal Code: 44600</p>
+                        </div>
+                        <div class="location-features">
+                            <p><strong>🕒 Store Hours:</strong></p>
+                            <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
+                            <p>Sunday: 11:00 AM - 6:00 PM</p>
+                            <p><strong>🚗 Parking:</strong> Available</p>
+                            <p><strong>🚌 Public Transport:</strong> Bus stop nearby</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6857788573887!2d85.31398831506198!3d27.69339798280649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a06c2eaf9%3A0xc5670a9173e161de!2sThapathali%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1693234567890!5m2!1sen!2snp" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com/?q=Thapathali,Kathmandu,Nepal" target="_blank" class="btn btn-secondary">
+                                📍 Get Directions
+                            </a>
+                            <button onclick="getCurrentLocation()" class="btn btn-secondary">
+                                📍 Show My Location
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div id="name-error" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div id="email-error" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div id="subject-error" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <div id="message-error" class="error"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="features-list">
+                    <ul>
+                        <li>How long does delivery take?</li>
+                        <li>What payment methods do you accept?</li>
+                        <li>Can I return or exchange products?</li>
+                        <li>Do you deliver outside Kathmandu?</li>
+                        <li>How can I track my order?</li>
+                        <li>Is cash on delivery available?</li>
+                        <li>What if my product is damaged?</li>
+                        <li>How do I cancel my order?</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

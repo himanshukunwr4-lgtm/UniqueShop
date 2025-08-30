@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - UniqueStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>    <main>
+        <div class="container">
+            <section class="promo-section">
+                <h2>Mega Sale - Up to 50% Off!</h2>
+                <p>Limited time offer on selected items</p>
+            </section>            <section class="product-listing">
+                <h1>Our Products</h1>
+                <p>Discover our wide range of quality products at competitive prices</p>                <div class="product-grid" id="product-grid">
+                    <div class="product-card" data-category="smartphones" data-brand="apple" data-price="159999">
+                        <div class="product-image">
+                            <img src="https://fdn.gsmarena.com/imgroot/reviews/23/iphone-15/lifestyle/-1024w2/gsmarena_020.jpg" alt="iPhone 15 Pro" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple iPhone 15 Pro</h3>
+                            <p class="product-price">Rs. 159,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('iPhone 15 Pro', '159,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('iphone-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                    <div class="product-card" data-category="smartphones" data-brand="samsung" data-price="79999">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300&h=250&fit=crop" alt="Samsung Galaxy Tab S9" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Samsung Galaxy Tab S9</h3>
+                            <p class="product-price">Rs. 79,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('Samsung Galaxy Tab S9', '79,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('samsung-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                    <div class="product-card" data-category="laptops" data-brand="dell" data-price="129999">
+                        <div class="product-image">
+                            <img src="https://th.bing.com/th/id/OIP.fS3_FbYk7HUSltO7unJ2mQHaE8?w=276&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Dell XPS 13" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Dell XPS 13 Laptop</h3>
+                            <p class="product-price">Rs. 129,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('Dell XPS 13', '129,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('dell-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                    <div class="product-card" data-category="audio" data-brand="apple" data-price="29999">
+                        <div class="product-image">
+                            <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/11/01/fca6da0e-fc77-11e9-acf9-cafedce87d15_image_hires_154757.jpg" alt="AirPods Pro" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Apple AirPods Pro</h3>
+                            <p class="product-price">Rs. 29,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('AirPods Pro', '29,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('airpods-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                    <div class="product-card" data-category="wearables" data-brand="fitbit" data-price="24999">
+                        <div class="product-image">
+                            <img src="https://blog.bestbuy.ca/wp-content/uploads/2023/01/Fitbit-Versa-4-hero.jpg" alt="Fitbit Charge 5" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fitbit Versa 4 Smartwatch</h3>
+                            <p class="product-price">Rs. 24,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('Fitbit Versa 4', '24,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('fitbit-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                    <div class="product-card" data-category="audio" data-brand="bose" data-price="19999">
+                        <div class="product-image">
+                            <img src="https://cdn.mos.cms.futurecdn.net/dJq4hyNveyxJkpqwEjqio7-1024-80.jpg" alt="Bose QuietComfort" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px 10px 0 0;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bose SoundLink Speaker</h3>
+                            <p class="product-price">Rs. 19,999</p>
+                            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                                <button class="btn" onclick="addToCart('Bose SoundLink', '19,999')" style="flex: 1;">Add to Cart</button>
+                                <button class="btn-details" onclick="toggleDetails('bose-details')" style="flex: 1;">View Details</button>
+                            </div>
+                        </div>
+                    </div>                </div>
+
+                <!-- Product Details Sections -->
+                <div id="iphone-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://fdn.gsmarena.com/imgroot/reviews/23/iphone-15/lifestyle/-1024w2/gsmarena_020.jpg" alt="iPhone 15 Pro">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Apple iPhone 15 Pro</h3>
+                            <p class="product-description">The iPhone 15 Pro features a titanium design, A17 Pro chip, and advanced camera system with 3x telephoto zoom. Perfect for photography enthusiasts and power users.</p>
+                            <p class="product-price">Rs. 159,999</p>
+                            <button class="btn" onclick="addToCart('iPhone 15 Pro', '159,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">(4.8/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Amazing camera quality and performance. Best iPhone yet!" - Rajesh K.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="samsung-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=300&fit=crop" alt="Samsung Galaxy Tab S9">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Samsung Galaxy Tab S9</h3>
+                            <p class="product-description">Premium Android tablet with 11-inch display, Snapdragon 8 Gen 2 processor, and included S Pen for productivity and creativity.</p>
+                            <p class="product-price">Rs. 79,999</p>
+                            <button class="btn" onclick="addToCart('Samsung Galaxy Tab S9', '79,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.3/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Great for work and entertainment. S Pen is very responsive!" - Priya S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dell-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://th.bing.com/th/id/OIP.fS3_FbYk7HUSltO7unJ2mQHaE8?w=276&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Dell XPS 13">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Dell XPS 13 Laptop</h3>
+                            <p class="product-description">Ultra-portable laptop with 13.4-inch FHD+ display, Intel i7 processor, 16GB RAM, and 512GB SSD. Perfect for professionals and students.</p>
+                            <p class="product-price">Rs. 129,999</p>
+                            <button class="btn" onclick="addToCart('Dell XPS 13', '129,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.5/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Excellent build quality and performance. Very lightweight!" - Arjun M.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="airpods-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/11/01/fca6da0e-fc77-11e9-acf9-cafedce87d15_image_hires_154757.jpg" alt="AirPods Pro">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Apple AirPods Pro</h3>
+                            <p class="product-description">Premium wireless earbuds with Active Noise Cancellation, Spatial Audio, H2 chip, and up to 6 hours of listening time.</p>
+                            <p class="product-price">Rs. 29,999</p>
+                            <button class="btn" onclick="addToCart('AirPods Pro', '29,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">(4.7/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Best sound quality and noise cancellation. Perfect for daily use!" - Sita K.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fitbit-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://blog.bestbuy.ca/wp-content/uploads/2023/01/Fitbit-Versa-4-hero.jpg" alt="Fitbit Versa 4">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Fitbit Versa 4 Smartwatch</h3>
+                            <p class="product-description">Advanced fitness smartwatch with GPS, heart rate monitoring, 6+ day battery life, and 40+ exercise modes for comprehensive health tracking.</p>
+                            <p class="product-price">Rs. 24,999</p>
+                            <button class="btn" onclick="addToCart('Fitbit Versa 4', '24,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.2/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Great fitness tracking and long battery life. Perfect for daily workouts!" - Kiran B.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bose-details" class="product-details" style="display: none;">
+                    <div class="product-detail-content">
+                        <div class="product-detail-image">
+                            <img src="https://cdn.mos.cms.futurecdn.net/dJq4hyNveyxJkpqwEjqio7-1024-80.jpg" alt="Bose SoundLink">
+                        </div>
+                        <div class="product-detail-info">
+                            <h3>Bose SoundLink Speaker</h3>
+                            <p class="product-description">Portable Bluetooth speaker with Bluetooth 5.1, 13-hour battery life, waterproof design, and premium sound quality for music lovers.</p>
+                            <p class="product-price">Rs. 19,999</p>
+                            <button class="btn" onclick="addToCart('Bose SoundLink', '19,999')">Add to Cart</button>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.5/5)</span>
+                            </div>
+                            <div class="product-review">
+                                <p><strong>Review:</strong> "Amazing sound quality and perfect for outdoor activities!" - Deepak N.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>    <script src="script.js"></script>
+</body>
+</html>

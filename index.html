@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniqueStore - Your Trusted Online Shopping Partner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://www.aims-international.com.my/uploads/5/1/8/8/51884201/20819003-1812931542350806-3556203203869331842-o_orig.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="banner-content">
+                <h1>Welcome to UniqueStore</h1>
+                <p>Discover amazing products at unbeatable prices with fast delivery across Nepal</p>
+                <a href="products.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="promo-section">
+                <h2>50% Off First Order!</h2>
+                <p>Limited time offer - Don't miss out on incredible savings</p>
+            </section>
+
+            <section class="intro-section">
+                <h2>Why Choose UniqueStore?</h2>
+                <p>UniqueStore is your trusted online Shopping destination which mainly offers a wide range of quality products of electronics products. We pride ourselves on excellent service to to the customers with competitive prices and reliable delivery throughout Nepal.</p>
+                
+                
+                <div class="features-list">
+                    <ul>
+                        <li>Free delivery on orders above Rs. 2000</li>
+                        <li>24/7 customer support</li>
+                        <li>Easy returns and exchanges</li>
+                        <li>Secure payment options</li>
+                        <li>Authentic products with warranty</li>
+                        <li>Cash on delivery available</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="ordered-list">
+                <h2>How to Order</h2>
+                <ol>
+                    <li>Browse our extensive product catalog</li>
+                    <li>Select your desired items and add to cart</li>
+                    <li>Review your order and proceed to checkout</li>
+                    <li>Choose your preferred payment method</li>
+                    <li>Provide delivery address and contact details</li>
+                    <li>Confirm your order and track delivery</li>
+                </ol>
+            </section>
+
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://media.cnn.com/api/v1/images/stellar/prod/220715121407-macbook-air-m2-review-1.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="MacBook Air M2" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="product-info">
+                            <h3>MacBook Air M2</h3>
+                            <p class="product-price">Rs. 149,999</p>
+                            <p>Ultra-thin laptop with M2 chip for exceptional performance</p>
+                            <button class="btn" onclick="addToCart('MacBook Air M2', '149,999')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://headphonereview.com/wp-content/uploads/2019/02/sony-wh-1000xm3-2.jpg" alt="Sony WH-1000XM5" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony WH-1000XM5 Headphones</h3>
+                            <p class="product-price">Rs. 34,999</p>
+                            <p>Premium noise-canceling headphones with superior sound quality</p>
+                            <button class="btn" onclick="addToCart('Sony WH-1000XM5', '34,999')">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.lk16UOP1YLjZDtNIdm61-gHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="LG 55 OLED TV" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="product-info">
+                            <h3>LG 55" OLED Smart TV</h3>
+                            <p class="product-price">Rs. 199,999</p>
+                            <p>4K OLED display with smart features and stunning picture quality</p>
+                            <button class="btn" onclick="addToCart('LG 55 OLED TV', '199,999')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-container">
+                <h2>More About Technologies</h2>
+                <p><strong>Online Shopping Advice:</strong> When shopping online, always verify the authenticity of the website, read product reviews, compare prices across different platforms, check return policies, and ensure secure payment methods. At UniqueStore, we prioritize your security and satisfaction with every purchase.</p>
+                
+                <div style="margin: 2rem 0;">
+                    <h3>Online Shopping Advice</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3w4t1dYCayM" title="Technology Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

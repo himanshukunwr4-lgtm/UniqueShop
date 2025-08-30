@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - UniqueStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">UniqueStore</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="product-detail.html">Product Detail</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="cart-section">
+                <h1>Your Shopping Cart</h1>
+                <p>Review your selected items before proceeding to checkout</p>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Unit Price</th>
+                            <th>Total Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sony WH-1000XM5</td>
+                            <td>1</td>
+                            <td>Rs. 34,999</td>
+                            <td>Rs. 34,999</td>
+                            <td><button class="btn remove-btn" style="background: #e74c3c; padding: 8px 16px; font-size: 0.9rem;" onclick="removeCartItem('Sony WH-1000XM5')">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td>MacBook Air M2</td>
+                            <td>1</td>
+                            <td>Rs. 149,999</td>
+                            <td>Rs. 149,999</td>
+                            <td><button class="btn remove-btn" style="background: #e74c3c; padding: 8px 16px; font-size: 0.9rem;" onclick="removeCartItem('MacBook Air M2')">Remove</button></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="3"><strong>Subtotal</strong></td>
+                            <td><strong>Rs. 184,998</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Delivery Charges</td>
+                            <td>Rs. 500</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Tax (13%)</td>
+                            <td>Rs. 24,050</td>
+                            <td></td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="3"><strong>Grand Total</strong></td>
+                            <td><strong>Rs. 209,548</strong></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="products.html" class="btn" style="background: #667eea; margin-right: 1rem;">Continue Shopping</a>
+                    <a href="order-confirmation.html" class="btn">Proceed to Checkout</a>
+                </div>
+            </section>
+
+            <section class="cart-benefits">
+                <h2>Why Shop with UniqueStore?</h2>
+                <div class="features-list">
+                    <ul>
+                        <li>Free delivery on orders above Rs. 2000</li>
+                        <li>Easy returns within 7 days</li>
+                        <li>Secure payment gateway</li>
+                        <li>Cash on delivery available</li>
+                        <li>24/7 customer support</li>
+                        <li>Genuine products with warranty</li>
+                        <li>Fast processing and delivery</li>
+                        <li>Multiple payment options</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="payment-methods">
+                <h2>Accepted Payment Methods</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Digital Wallets</h3>
+                            <p>eSewa, Khalti, IME Pay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Bank Transfer</h3>
+                            <p>All major banks supported</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Credit/Debit Cards</h3>
+                            <p>Visa, MasterCard, RuPay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-info" style="text-align: center;">
+                            <h3>Cash on Delivery</h3>
+                            <p>Pay when you receive</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniqueStore. All rights reserved.</p>
+            <p>Your trusted online shopping partner in Nepal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
