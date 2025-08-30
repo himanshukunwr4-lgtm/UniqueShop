@@ -324,4 +324,38 @@ document.addEventListener('DOMContentLoaded', function() {
             validateContactForm();
         });
     }
+    
+    // Mobile menu toggle functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (mobileMenuToggle && nav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            
+            // Update hamburger icon
+            if (nav.classList.contains('active')) {
+                mobileMenuToggle.innerHTML = '✕';
+            } else {
+                mobileMenuToggle.innerHTML = '☰';
+            }
+        });
+        
+        // Close menu when clicking on nav links
+        const navLinks = nav.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                nav.classList.remove('active');
+                mobileMenuToggle.innerHTML = '☰';
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!nav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                nav.classList.remove('active');
+                mobileMenuToggle.innerHTML = '☰';
+            }
+        });
+    }
 });
